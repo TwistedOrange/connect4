@@ -1,13 +1,8 @@
-p {
-  color: red;
-}
-
 #game {
-  background-color: rgba(100,20,190,.30);
+  /*background-color: rgba(100,20,190,.30);
   height: 450px;
   width: 350px;
-  border-width: thin;
-
+  border-width: thin;*/
 }
 body {
   height: 800px;
@@ -16,25 +11,28 @@ body {
 }
 
 ul {
-  height: 70px;
+  height: 60px;
   width: 50px;
   border-width: thin;
   /*list-style-type: circle;*/
-  list-style: url('../images/greendot.png');
+  /*list-style: url('||');*/
   /*border-color: 'orange'*/
   display: inline-grid;
   float: left;
   position: relative;
-  padding-top: 35px;
+  padding-top: 45px;
 }
 
 li {
 
 }
 
-.score {
-  padding-left: 20px;
+#form {
+  padding-bottom: 20px;
 }
+/*.score {
+  padding: 10px 20px;   // T,B & L&R
+}*/
 
 .nameForm {
   color: green;
@@ -53,5 +51,5 @@ h1 {
   /*border-top: 10px solid #777;*/
   border-bottom: 40px solid #ff0;
   position: relative;
-  left: 90px;
+  left: 180px;
 }

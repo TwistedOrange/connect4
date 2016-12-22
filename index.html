@@ -9,101 +9,107 @@
   <h1>Connect Four Championships</h1>
   <nav class='navigation'>
   </nav>
-  <div >
+  <div id='form'>
   <form name="playerName" class="nameForm">
-    Player 1:<input type='text' name='name1' value="player1"><br />
-    <input type='button' onclick='savePlayerName()' value='Save'>
-    Player 2:<input type='text' name='name2' value="player2">
-    <input type='button' onclick='savePlayerName()' value='Save'>
+    Player 1 Name: <input type='text' name='name1' value="player1">
+    <input type='button' onclick='managePlayer.savePlayerName("111")' value='Save'>
+    <br /><br />
+    Player 2 Name: <input type='text' name='name2' value="player2">
+    <input type='button' onclick='managePlayer.savePlayerName("222")' value='Save'>
   </form>
-  <div class='player'>Player 1<span class='score'>score:</span></div>
-  <span><img src="images/greendot.png" onclick="selectToken('green')"/></span>
-  <div class='player'>Player 2<span class='score'>score:</span></div>
-  <span><img src="images/purpledot.png" onclick="selectToken('purple')"/></span>
+  <div class='player'>
+    <!-- <span class='score'>score:</span> -->
+    <span>
+      <img src="images/greendot.png" onclick="selectToken('token1')"/>Player 1
+    </span>
+  </div>
+  <div class='player'>
+    <!-- <span class='score'>score:</span>< -->
+    <span>
+      <img src="images/purpledot.png" onclick="selectToken('token2')"/>Player 2
+    </span>
+  </div>
 </div>
 <span id='colMarker'></span>
 <div id=#game>
   <div class='board' data-column='0'>
     <ul>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
     </ul>
   </div>
   <div class='board' data-column='1'>
-    <ul>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
+    <ul id='row1'>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
     </ul>
 </div>
   <div class='board' data-column='2'>
-    <ul>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
+    <ul id='row2'>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
   </ul>
   </div>
   <div class='board' data-column='3'>
-    <ul>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
+    <ul id='row3'>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
     </ul>
   </div>
   <div class='board' data-column='4'>
-    <ul>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
+    <ul id='row4'>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
     </ul>
   </div>
   <div class='board' data-column='5'>
-    <ul>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
+    <ul id='row5'>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
     </ul>
   </div>
   <div class='board' data-column='6'>
-    <ul>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
-      <li img src=images/token.jpg title='connect-four game piece'></li>
+    <ul id='row6'>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
     </ul>
 </div>
 </div>
-
-
-
 
   <script src='scripts/script.js'></script>
 </body>
