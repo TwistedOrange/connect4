@@ -1,0 +1,57 @@
+p {
+  color: red;
+}
+
+#game {
+  background-color: rgba(100,20,190,.30);
+  height: 450px;
+  width: 350px;
+  border-width: thin;
+
+}
+body {
+  height: 800px;
+  width: 800px;
+  padding-left: 35px;
+}
+
+ul {
+  height: 70px;
+  width: 50px;
+  border-width: thin;
+  /*list-style-type: circle;*/
+  list-style: url('../images/greendot.png');
+  /*border-color: 'orange'*/
+  display: inline-grid;
+  float: left;
+  position: relative;
+  padding-top: 35px;
+}
+
+li {
+
+}
+
+.score {
+  padding-left: 20px;
+}
+
+.nameForm {
+  color: green;
+}
+h1 {
+  color: blue;
+}
+/*.player {
+  text-transform: uppercase;
+}*/
+
+#colMarker {
+  width: 15px;
+  /*height: 10;*/
+  border: 10px solid;
+  /*border-top: 10px solid #777;*/
+  border-bottom: 40px solid #ff0;
+  position: relative;
+  left: 90px;
+}
